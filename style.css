@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kalam;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4{
+    font-size: 20px;
+    color: black;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: grey;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* ________________________Header Start_______________________ */
+
+#header{
+    display: flex;
+}
+
+.logo{
+    width: 400px;
+    height: 150px;
+    margin: 25px 40px;
+}
+
+#header .search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    margin-left: 15%;
+}
+
+#header .search1{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background:linear-gradient(transparent,rgb(239, 236, 236),transparent);
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 30px;
+}
+
+#header .search1 input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+
+#header .search1 button i{
+    font-size: 25px;
+    padding: 10px;
+}
+
+#header .search1 button{
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(transparent,rgb(224, 221, 221),transparent);
+    cursor: pointer;
+} 
+
+::placeholder{
+    color: black;
+}
+
+/* --------------------------------------banner-------------------------------------- */
+
+.banner{
+    width: 100%;
+    height: 300px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* _____________________________________feature box_________________________________ */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 250px;
+    align-items: center;
+    box-shadow: 20px 20px 34px black;
+    padding: 25px 15px;
+    border-radius: 5px;
+    margin: 15px 20px;
+}
+
+#feature .fe-box img{
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: gray;
+    text-align: center;
+    font-size: larger;
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: lightgrey;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: lightgrey;
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: lightgrey;
+}
+
+#feature .fe-box:nth-child(8) h6{
+    background-color: lightgrey;
+}
+
+/* ---------------------------------------------------------------Product */
+
+#product1 {
+    text-align: center;
+}
+
+#product1 h2{
+    text-decoration: underline rgb(205, 205, 53);
+}
+
+#product1 .pro-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+#product1 .pro-container .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    box-shadow: 10px 10px 20px rgb(205, 205, 53);
+    margin: 15px 20px;
+    transition: 0.2s ease;
+    position: relative;
+    transform: 0.5s;
+} 
+
+#product1 .pro:hover{
+    transform: scale(1.08);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: rgb(191,159,98);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#product1 .pro .des a{
+    padding-top: 7px;
+    color: black;
+    font-size: 23px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#product1 .pro .des a:hover{
+    color: rgb(119, 119, 29);
+}
+
+#product1 .pro .price i{
+    font-size: 25px;
+    padding-top: 10px;
+    color: red;
+}
+
+#product1 .pro h3{
+    width: 50px;
+    height: 50px;
+    line-height: 70px;
+    border-radius: 50px;
+    color: rgb(255, 153, 0);
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------Footer----------------------------------------------------- */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(230, 230, 107);
+    margin-top: 20px;
+    border-top: 7px solid rgb(191,159,98);
+}
+
+footer .col{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .col strong{
+    color: black;
+}
+
+footer h4{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    color: black;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.follow .icon a{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 17px;
+    color: black;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.follow .icon a:hover, footer a:hover{
+    color: rgb(92, 92, 22);
+    transform: translateY(5px);
+}
+
+footer .payment img{
+    width: 250px;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+#mobile{
+    display: none;
+    list-style: none;
+}
+
+#close{
+    display: none;
+}
+
+/* ---------------Mobile--------- */
+
+@media screen and (max-width:900px){
+
+    .section-p1{
+        padding: 40px 40px;
+    }
+
+    #header{
+        padding: 0px 30px;
+    }
+    
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 50px;
+        right: -200px;
+        height: 70%;
+        width: 200px;
+        background-color: transparent;
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        background-color: rgb(205, 205, 53);
+        border-radius: 20px;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #navbar #view-cart{
+        margin-top: 50px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: black;
+        font-size: 30px;
+        padding-left: 40px;
+        cursor: pointer;
+    }
+    
+    #close{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #mid-outer{
+        background-position: top 100% left 20%;
+    }
+
+    #mid-outer #mid-inner{
+        padding: 160px 70px;
+        top: 20px;
+    }
+
+    #mid-outer #mid-inner h1{
+        font-size: 40px;
+    }
+
+    #mid-outer #mid-inner button{
+        color: black;
+    }
+
+    #mid-outer:hover #mid-inner button{
+        color: white;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+    
+    #product1 .pro-container{
+        justify-content: center;
+    } 
+
+    #product1 .pro{
+        margin: 10px 10px;
+    } 
+
+    #banner {
+        justify-content: center;
+    }
+
+    #banner3 .banner-box3{
+        padding: 50px 30px;
+    }
+
+    #prodetail .single-pro-detail h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    #navbar{
+        right: -160px;
+        width: 160px;
+    }
+
+    #header{
+        height: 50px;
+    }
+    
+    .logo{
+        width: 110px;
+        height: 80px;
+    }
+    
+    #mobile i{
+        font-size: 25px;
+    }
+
+    #close{
+        font-size: 25px;
+    }
+    #mid-outer #mid-inner {
+        left: 0;
+    }
+
+    #mid-outer #mid-inner h1{
+        font-size: 35px;
+    }
+
+    #mid-outer #mid-inner{
+        padding: 160px 60px;
+    }
+
+    #product1 h2{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    #prodetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+     #prodetail div.single-pro-image {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #prodetail .single-pro-detail h2{
+        font-size: 20px;
+    }
+
+    #prodetail div.single-pro-detail{
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    #prodetail .single-pro-detail li p{
+        line-height: 20px;
+    }
+
+    #banner3 .banner-box4,
+    .banner-box5,
+    .banner-box6,
+    .banner-box7,
+    .banner-box8, h3{
+        font-size: 25px;
+    }
+
+    #banner3 .banner-box4,
+    .banner-box5,
+    .banner-box6,
+    .banner-box7,
+    .banner-box8, span{
+        font-size: 15px;
+    }
+    
+    #address .contact-right form input, form textarea, form select{
+        width: 100%;
+    }
+}
+
+
+/* ========================================================================Shop============================================= */
+
+
+#banner3 .banner-box4{
+    background-image: url("shoping/dry\ dhoop.jpg");
+    color: black;
+    font-size: 30px;
+}
+
+#banner3 .banner-box5{
+    background-image: url("shoping/agarbatti.jpg");
+    color: black;
+    font-size: 30px;
+}
+
+#banner3 .banner-box6{
+    background-image: url("shoping/sambarni.jpg");
+    font-size: 30px;
+}
+
+#banner3 .banner-box7{
+    background-image: url("shoping/floral.jpg");
+    font-size: 30px;
+    color: black;
+}
+
+#banner3 .banner-box8{
+    background-image: url("shoping/offer2.jpg");
+    font-size: 30px;
+    color: rgb(39, 186, 39);
+}
+
+#pageheader{
+    background-image: url("image/address.jpg");
+    height: 40vh;
+    background-size: cover;
+    font-size: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#pageheader.agarbatti-head{
+    background-image: url("shoping/agarbatti.jpg");
+}
+
+#pageheader.dhoop-head{
+    background-image: url("shoping/dry\ dhoop.jpg");
+}
+
+#pageheader.sambrani-head{
+    background-image: url("shoping/sambarni.jpg");
+}
+
+#pageheader.floral-head{
+    background-image: url("shoping/floral.jpg");
+}
+
+#pageheader.offer-head{
+    background-image: url("image/festive.jpg");
+}
+
+/* ===============================================================Blog====================================== */
+
+#blogs{
+    padding: 40px 30px;
+}
+
+#blogs img{
+    background-size: cover;
+    width: 50%;
+    margin:10px 25%;
+    border-radius: 5px;
+}
+
+#pageheader.blog-head{
+    background-image: url("image/bloghead.jpg");
+}
+
+/* =======================================================About US=========================================== */
+
+#pageheader.about-head{
+    background-image: url("image/abouthead.jpg");
+}
+
+.ab{
+    margin: 5%;
+}
+
+.ab p{
+    margin: 1%;
+}
+
+/* =====================================================Contact Us============================================= */
+
+#contact-info .contactus{
+    margin: 5% 10%;
+}
+
+#contact-info .contactus .follow{
+    text-align: center;
+}
+
+#contact-info .contactus .follow h2{
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#contact .container{
+    margin: 2%;
+    text-align: center;
+    background: linear-gradient(orange, lightblue);
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+#contact .container h3{
+    font-size: larger;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+    color: rgb(119, 20, 20);
+}
+
+form input, form textarea,form select{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    color:  black;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.container .btn{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border: 5px solid transparent;
+    padding: 0 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.container .btn:hover{
+    background: gray;
+    color: black;
+}
+
+.container #msg{
+    color: green;
+}
+
+
+/* ======================================Address================================== */
+
+#address{
+    margin: 0 10%;
+}
+
+#address .container #msg1{
+    color: green;
+}
+
+#address .container h2{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+    color: rgb(218, 105, 105);
+}
+
+#address .contact-right{
+    margin: 2%;
+    text-align: center;
+    background: linear-gradient(lightblue, coral);
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+#address form input, form textarea,form select{
+    width: 45%;
+}
+
+#upi{
+    display: none;
+    text-align: center;
+}
+
+#upi img{
+    width: 30%;
+}
+
+#pay{
+    background-color: coral;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0 10%;
+    transition: 0.5s;
+}
+
+#pay:hover{
+    background-color: lightblue;
+}
+
+
+/* ===========================================================Prodetail========================================== */
+
+#prodetail{
+   display: flex;
+   margin-top: 50px;
+}
+
+#prodetail .single-pro-image{
+   width: 40%;
+   margin-left: 50px;
+}
+
+#prodetail .single-pro-image img{
+    border-radius: 10px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetail .single-pro-detail{
+    width: 60%;
+    padding: 20px 0 0 40px;
+}
+
+#prodetail .single-pro-detail h3{
+    padding-bottom: 20px;
+}
+
+#prodetail .single-pro-detail h2{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+#prodetail .single-pro-detail span{
+    font-weight: 900;
+}
+
+#prodetail .single-pro-detail li{
+    line-height: 10px;
+}
+
+#prodetail .single-pro-detail li p{
+    line-height: 20px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+/* #prodetail .single-pro-detail input{
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+} */
+
+#prodetail .single-pro-detail button{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 80%;
+    color: white;
+    background:linear-gradient(red,black);
+    margin-left: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#prodetail .single-pro-detail button:hover{
+    background:linear-gradient(black, red);
+}
+
+#prodetail .single-pro-detail .price{
+    display: inline-flex;
+        font-size: 30px;
+        padding-top: 10px;
+        color: rgb(249, 54, 54);
+}
+
+.product-desc{
+    text-align: left;
+    padding: 30px 50px;
+}
+
+.product-desc h2{
+    font-size: 30px;
+}
+
+/* =====================================================================Cart */
+
+#banner4{
+    width: 100%;
+}
+
+#banner4 .banner-box8{
+    background-image: url("image/carttop.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 50px;
+    padding: 100px;
+    text-align: center;   
+}
+
+
+
