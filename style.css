@@ -171,7 +171,8 @@ body {
 }
 
 #product1 h2{
-    text-decoration: underline rgb(205, 205, 53);
+    text-decoration: underline grey;
+    font-size: 30px;
 }
 
 #product1 .pro-container{
@@ -184,11 +185,10 @@ body {
 #product1 .pro-container .pro{
     width: 20%;
     min-width: 250px;
-    padding: 10px 12px;
-    box-shadow: 10px 10px 20px rgb(205, 205, 53);
+    padding: 10px;
     margin: 15px 20px;
+    box-shadow: 10px 10px 20px black;
     transition: 0.2s ease;
-    position: relative;
     transform: 0.5s;
 } 
 
@@ -202,19 +202,14 @@ body {
     cursor: pointer;
 }
 
-#product1 .pro .des{
-    text-align: start;
-    padding: 10px 0;
-}
-
 #product1 .pro .des span{
     color: rgb(191,159,98);
     font-size: 15px;
     font-weight: 800;
+    margin: 0 5px;
 }
 
 #product1 .pro .des a{
-    padding-top: 7px;
     color: black;
     font-size: 23px;
     text-decoration: none;
@@ -228,20 +223,7 @@ body {
 #product1 .pro .price i{
     font-size: 25px;
     padding-top: 10px;
-    color: red;
-}
-
-#product1 .pro h3{
-    width: 50px;
-    height: 50px;
-    line-height: 70px;
-    border-radius: 50px;
-    color: rgb(255, 153, 0);
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-    font-size: 25px;
-    text-decoration: none;
+    color: black;
 }
 
 /* --------------------------------------------------Footer----------------------------------------------------- */
@@ -250,9 +232,9 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(230, 230, 107);
+    background-color: whitesmoke;
     margin-top: 20px;
-    border-top: 7px solid rgb(191,159,98);
+    border-top: 7px solid black;
 }
 
 footer .col{
@@ -285,22 +267,23 @@ footer a{
     margin-bottom: 10px;
 }
 
-.follow .icon a{
+.fimg img{
+    width: 300px;
+    cursor: pointer;
+}
+
+.follow .icon i{
     text-decoration: none;
     margin-right: 15px;
-    font-size: 17px;
+    font-size: 60px;
     color: black;
     display: inline-block;
     transition: transform 0.5s;
 }
 
-.follow .icon a:hover, footer a:hover{
+.follow .icon i:hover, footer i:hover{
     color: rgb(92, 92, 22);
     transform: translateY(5px);
-}
-
-footer .payment img{
-    width: 250px;
 }
 
 footer .copyright{
