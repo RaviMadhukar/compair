@@ -258,6 +258,99 @@ body {
     color: black;
 }
 
+/* =============================================product list================================================== */
+
+#prodetail{
+    display: flex;
+ }
+ 
+ #prodetail .single-pro-image{
+    width: 40%;
+    margin-left: 50px;
+ }
+ 
+ #prodetail .single-pro-image img{
+     border-radius: 10px;
+ }
+ 
+ .small-img-group{
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .small-img-col{
+     flex-basis: 24%;
+     cursor: pointer;
+ }
+ 
+ #prodetail .single-pro-detail{
+     width: 60%;
+     padding: 20px 0 0 40px;
+ }
+ 
+ #prodetail .single-pro-detail h3{
+     padding-bottom: 20px;
+ }
+ 
+ #prodetail .single-pro-detail h2{
+     font-size: 25px;
+     line-height: 35px;
+ }
+ 
+ #prodetail .single-pro-detail span{
+     font-weight: 900;
+ }
+ 
+ #prodetail .single-pro-detail .key{
+     display: flex;
+     padding: 10px;
+     flex-wrap: wrap;
+ }
+
+ #prodetail .single-pro-detail .key li{
+     line-height: 10px;
+     width: 300px;
+ }
+ 
+ #prodetail .single-pro-detail li p{
+     line-height: 20px;
+     margin-left: 20px;
+     
+ }
+ 
+ #prodetail .single-pro-detail button{
+     font-size: 15px;
+     font-weight: 600;
+     padding: 10px 20px;
+     width: 80%;
+     color: white;
+     background:linear-gradient(red,black);
+     margin-left: 10%;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 0.5s ease;
+ }
+ 
+ #prodetail .single-pro-detail button:hover{
+     background:linear-gradient(black, red);
+ }
+ 
+ #prodetail .single-pro-detail .price{
+     display: inline-flex;
+         font-size: 30px;
+         padding-top: 10px;
+         color: rgb(249, 54, 54);
+ }
+ 
+ .product-desc{
+     text-align: left;
+     padding: 30px 50px;
+ }
+ 
+ .product-desc h2{
+     font-size: 30px;
+ }
+
 /* --------------------------------------------------Footer----------------------------------------------------- */
 
 footer{
@@ -419,6 +512,10 @@ footer .copyright{
     #product1 .pro{
         margin: 10px 10px;
     } 
+
+    #prodetail .single-pro-detail h2{
+        font-size: 23px;
+    }
 }
 
 @media screen and (max-width: 490px){
@@ -470,6 +567,7 @@ footer .copyright{
     .banner{
         height: 200px;
     }
+
 }
 
 @media screen and (max-width: 650px){
@@ -494,6 +592,30 @@ footer .copyright{
     #feature .fe-box img{
         width: 100%;
         height: 120px;
+    }
+
+    #prodetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+     #prodetail div.single-pro-image {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #prodetail .single-pro-detail h2{
+        font-size: 20px;
+    }
+
+    #prodetail div.single-pro-detail{
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    #prodetail .single-pro-detail li p{
+        line-height: 20px;
     }
 
 }
