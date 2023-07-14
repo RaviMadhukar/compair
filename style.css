@@ -421,15 +421,20 @@ footer .copyright{
     } 
 }
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 490px){
 
     #navbar{
         right: -200px;
         width: 200px;
+        top: 70px;
     }
     
     #mobile i{
         font-size: 25px;
+    }
+
+    #mobile{
+        margin: -95px 0 0 90%;
     }
 
     #close{
@@ -454,6 +459,10 @@ footer .copyright{
         margin-top: 0px;
     }
 
+    #feature .fe-box{
+        padding: 20px 15px;
+    }
+
     #product1 h2{
         font-size: 35px;
     }
@@ -464,6 +473,10 @@ footer .copyright{
 }
 
 @media screen and (max-width: 650px){
+
+    #navbar{
+        top: 40px;
+    }
 
     .logo{
         width: 70%;
