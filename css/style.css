@@ -315,7 +315,6 @@ body {
  #prodetail .single-pro-detail li p{
      line-height: 20px;
      margin-left: 20px;
-     
  }
  
  #prodetail .single-pro-detail button{
@@ -343,13 +342,50 @@ body {
  }
  
  .product-desc{
-     text-align: left;
      padding: 30px 50px;
  }
  
  .product-desc h2{
+    text-align: center;
      font-size: 30px;
+     text-decoration: underline;
  }
+
+ .product-desc .key span,i{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.product-desc .key span{
+    text-decoration: underline;
+}
+
+ .product-desc .key{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color:antiquewhite;
+}
+
+.product-desc .key li{
+    line-height: 10px;
+    width: 605px;
+    margin: 10px;
+}
+
+.product-desc li p{
+    line-height: 20px;
+    margin-left: 50px;
+}
+
+.product-desc li p .point{
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+    text-decoration: none;
+}
 
 /* --------------------------------------------------Footer----------------------------------------------------- */
 
