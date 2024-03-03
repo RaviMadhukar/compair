@@ -16,21 +16,53 @@ if(close){
 
 // ===================================================================Prodetail
 
-var mainimg= document.getElementById("mainimg");
+var mainimgs= document.getElementById("mainimg");
 var smallimg= document.getElementsByClassName("small-img");
 
-smallimg[0].onclick = function (){
-    mainimg.src = smallimg[0].src;
+
+
+
+// --------------------------------------------Search
+
+let availablekeywords = [
+    'iQOO Z7 Pro 5G',
+    'One Plus Nord CE 3 Lite',
+    'Realme Narzo 60 5G',
+    'Redmi Note 12 5G',
+    'Redmi Note 12 por 5G',
+    'Redmi Note 13 5G',
+    'Redmi 13C',
+    'Samsung Galaxy M13',
+];
+
+const searchresults = document.querySelector(".searchresult");
+const inputbox = document.getElementById("input-box");
+
+inputbox.onkeyup = function(){
+    let result =[];
+    let input = inputbox.value;
+    if(input.length){
+        result= availablekeywords.filter((keyword)=>{
+            return keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        console.log(result);
+    }
+    display(result);
+
+    if(!result.length){
+        inputbox.innerHTML='';
+    }
 }
 
-smallimg[1].onclick = function (){
-    mainimg.src = smallimg[1].src;
+function display(result){
+    const content = result.map((list)=>{
+        return "<li onclick=selectInput(this)>"+ list + "</li>";
+    });
+
+    searchresults.innerHTML = "<ul>"+ content.join('') + "</ul>";
 }
 
-smallimg[2].onclick = function (){
-    mainimg.src = smallimg[2].src;
-}
-
-smallimg[3].onclick = function (){
-    mainimg.src = smallimg[3].src;
+function selectInput(list){
+    inputbox.value = list.innerHTML;
+    inputbox.innerHTML='';
 }
